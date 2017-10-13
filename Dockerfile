@@ -92,6 +92,7 @@ RUN apt-get update \
         && apt-get install -y libsnappy-dev zlib1g-dev libbz2-dev libyaml-dev libltdl-dev libtool \
         && apt-get install -y python-pip \
         && apt-get install -y vim tree jq unzip \
+        && apt-get install -y docker \
         && pip install --upgrade pip \
         && pip install behave nose docker-compose \
         && rm -rf /var/cache/apt
